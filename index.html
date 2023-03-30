@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 5px;
+        padding: 0px;
+    }
+    #container{
+        width: 300px;
+        height: 350px;
+        background-color: skyblue;
+    }
+    #display{
+        background-color: rgb(211, 48, 211);
+        width: 220px;
+        height: 30px;
+        box-shadow: 0px 5px 5px black;
+    }
+    #a
+    {
+        width: 50px;
+        height: 30px;
+        font-size: 20px;
+        border-radius: 100%;
+        background-color: black;
+        color: rgb(211, 48, 211);
+        box-shadow: 0px 5px 5px black;
+    }
+    #a:hover
+    {
+        background-color: hotpink;
+    }
+
+</style>
+<body>
+    <center>
+    <div id="container">
+        <form name="calc">
+        <input id="display" name="Anaswer">
+        <br><br>
+        <input id="a" type="button" value="1" onclick="calc.display.value+='1'">
+        <input id="a" type="button" value="3" onclick="calc.display.value+='3'">
+        <input id="a" type="button" value="+" onclick="calc.display.value+='+'">
+        <input id="a" type="button" value="2" onclick="calc.display.value+='2'">
+        <br><br>
+        <input id="a"type="button" value="5" onclick="calc.display.value+='5'">
+        <input id="a"type="button" value="4" onclick="calc.display.value+='4'">
+        <input id="a"type="button" value="6" onclick="calc.display.value+='6'">
+        <input id="a"type="button" value="-" onclick="calc.display.value+='-'">
+        <br><br>
+        <input id="a"type="button" value="7" onclick="calc.display.value+='7'">
+        <input id="a"type="button" value="8" onclick="calc.display.value+='8'">
+        <input id="a"type="button" value="9" onclick="calc.display.value+='9'">
+        <input id="a"type="button" value="*" onclick="calc.display.value+='*'">
+        <br><br>
+        <input id="a"type="button" value="/" onclick="calc.display.value+='/'">
+        <input id="a"type="button" value="." onclick="calc.display.value+='.'">
+        <input id="a"type="button" value="0" onclick="calc.display.value+='0'">
+        <input id="a"type="button" value="%" onclick="calc.display.value+='%'">
+        <br><br>
+        <input id="a"type="button" value="="onclick="display.value = eval(display.value)"
+        class ="equal">
+    </form>
+    </div>
+</center>
+</body>
+</html>
